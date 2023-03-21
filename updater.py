@@ -1,4 +1,5 @@
 import requests
+import time
 
 def CheckForUpdate(filename, url):
     filecheck = requests.get(url)
@@ -15,5 +16,7 @@ def CheckForUpdate(filename, url):
         file.close()
 
 CheckForUpdate('Installer.py', 'https://raw.githubusercontent.com/NandemoStudios/FileDownloader/main/installer.py')
-CheckForUpdate('Updater.py', 'https://raw.githubusercontent.com/FileDownloader/NandemoStudios/updater.py')
-CheckForUpdate('Setup.py', 'https://raw.githubusercontent.com/FileDownloader/NandemoStudios/setup.py')
+time.sleep(.5)
+CheckForUpdate('Updater.py', 'https://raw.githubusercontent.com/NandemoStudios/FileDownloader/main/updater.py')
+time.sleep(.5)
+CheckForUpdate('Setup.py', 'https://raw.githubusercontent.com/NandemoStudios/FileDownloader/main/setup.py')
