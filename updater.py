@@ -16,7 +16,5 @@ def CheckForUpdate(filename, url):
         file.close()
 
 CheckForUpdate('Installer.py', 'https://raw.githubusercontent.com/NandemoStudios/FileDownloader/main/installer.py')
-time.sleep(.5)
 CheckForUpdate('Updater.py', 'https://raw.githubusercontent.com/NandemoStudios/FileDownloader/main/updater.py')
-time.sleep(.5)
 CheckForUpdate('Setup.py', 'https://raw.githubusercontent.com/NandemoStudios/FileDownloader/main/setup.py')
